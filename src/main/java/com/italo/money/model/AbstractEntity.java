@@ -15,7 +15,7 @@ public class AbstractEntity implements Serializable {
     private boolean active;
     @Getter @Setter @Id
     @GeneratedValue(strategy= GenerationType.SEQUENCE)
-    private long id;
+    private Long id;
     @Getter @Setter
     private LocalDateTime createTime = LocalDateTime.now();
     @Getter @Setter

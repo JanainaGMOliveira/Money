@@ -5,6 +5,7 @@ import lombok.Setter;
 
 import javax.persistence.Entity;
 import javax.persistence.ManyToMany;
+import javax.persistence.OneToOne;
 
 @Entity
 public class Transaction extends AbstractEntity {
@@ -12,6 +13,8 @@ public class Transaction extends AbstractEntity {
     private String description;
     @Getter @Setter
     private Double ammount;
-    @ManyToMany @Getter @Setter
+    @OneToOne @Getter @Setter
     private TransactionMethod method;
+    @Getter @Setter
+    private Integer portions;
 }
