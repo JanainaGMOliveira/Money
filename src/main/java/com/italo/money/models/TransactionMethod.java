@@ -1,4 +1,4 @@
-package com.italo.money.model;
+package com.italo.money.models;
 
 import lombok.Getter;
 import lombok.Setter;

@@ -1,12 +1,10 @@
-package com.italo.money.model;
+package com.italo.money.models;
 
 import lombok.Getter;
 import lombok.Setter;
-import org.apache.tomcat.jni.Local;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @MappedSuperclass
@@ -16,6 +14,8 @@ public class AbstractEntity implements Serializable {
     @Getter @Setter @Id
     @GeneratedValue(strategy= GenerationType.SEQUENCE)
     private Long id;
+    @Getter @Setter
+    private String uuid;
     @Getter @Setter
     private LocalDateTime createTime = LocalDateTime.now();
     @Getter @Setter

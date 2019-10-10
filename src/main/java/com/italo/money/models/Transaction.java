@@ -1,10 +1,9 @@
-package com.italo.money.model;
+package com.italo.money.models;
 
 import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.Entity;
-import javax.persistence.ManyToMany;
 import javax.persistence.OneToOne;
 
 @Entity
